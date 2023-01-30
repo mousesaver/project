@@ -1,0 +1,58 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 82vw;
+    
+}
+
+ul li {
+    width: 40vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem;
+    margin-top: 1rem;
+}
+ul li img {
+    width: 75px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(4, 4, 128);
+}
+ul li div {
+    margin-left: 15px;
+}
+.showDobbtn {
+    margin-top: 0.5rem;
+}
+
+.reloadbtn {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 95vw;
+    }
+    ul li {
+        width: 100%;
+    }
+}
